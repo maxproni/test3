@@ -1,0 +1,82 @@
+.menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #316099;
+    width: 0px;
+    height: 100%;
+
+    transition: cubic-bezier(.68,-0.55,.27,1.55) 1s;
+}
+
+.menu ul{
+    padding:0px;
+    padding-left: 10px;
+}
+
+.menu ul li{
+    list-style-type: none;
+}
+
+.menu ul li a{
+    background: #fff;
+    display: block;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: #5A98D0;
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 1px solid #316099;
+    padding: 5px;
+
+}
+
+@keyframes menua {
+    from {font-size: 14px;}
+    50% {font-size: 20px;}
+    to {font-size: 14px;}
+}
+
+.menu ul li a:hover{
+    background: #deecf6;
+    animation-name: menua;
+    animation-duration: 1s;
+}
+
+.menu-btnX{
+    background: #eb5757;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-btn{
+    color: #316099;
+    font-size: 24px;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.menu-btn::after{
+    content: "\2630";
+    text-decoration: none;
+}
+
+.menu-btnX::after{
+    content: "\00d7";
+    text-decoration: none;
+}
+
+#menuCheckbox{
+    display: none;
+}
+
+#menuCheckbox:checked ~ .menu {
+    width: 200px;
+}

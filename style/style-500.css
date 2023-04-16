@@ -1,0 +1,12 @@
+@media(max-width: 500px){
+
+.content-img{
+    margin-top: 0px;
+}
+
+.content div:nth-child(n+2){
+    margin: 0;
+    padding: 0;
+}
+
+}

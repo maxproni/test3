@@ -1,0 +1,28 @@
+@media(max-width: 1300px){
+.heromaskgroup{
+    background-size:auto;
+}
+
+.heromaskgroup p{
+    line-height: 24px;
+}
+
+.content,.content2{
+    flex-direction: column;
+}
+
+.content{
+    align-items: center;
+}
+
+.polosa{
+    border: 0px;
+}
+
+.content-div{
+    margin: auto !important;
+}
+
+
+
+}
